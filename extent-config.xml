@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>standard</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- enable or disable timeline on dashboard -->
+        <enableTimeline>true</enableTimeline>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>Batch Execution Result</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+		
+        <reportName>
+		 <![CDATA[
+                <img src='https://cdn0.capterra-static.com/logos/150/2118076-1512068256.png' />
+                <font size="5"> ESURETY AUTOMATION BATCH RESULTS </font> 
+            ]]>
+		</reportName>
+		
+		<!-- timestamp format -->
+		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+		
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('.logo-container.blue.darken-2').css('display','none');
+                });
+            ]]>
+        </scripts>
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+                 .report-name { padding-left: 0px; } .report-name > img { float: left;height: 10%;margin-left: -70px;margin-top: -10px;width: 15%;font-weight: bold; }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

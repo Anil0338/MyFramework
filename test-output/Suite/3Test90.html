@@ -1,0 +1,337 @@
+<html>
+<head>
+<title>TestNG:  3Test90</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>3Test90</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 20 11:30:27 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1942 seconds (1942512 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='appFunctions.CancelRenewal.cancelRenewal()'><b>cancelRenewal</b><br>Test class: appFunctions.CancelRenewal</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at appFunctions.CancelRenewal.cancelRenewal(CancelRenewal.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1971436037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1971436037'><pre>java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:670)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at appFunctions.CancelRenewal.cancelRenewal(CancelRenewal.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>271</td>
+<td>appFunctions.CancelRenewal@64b7225f</td></tr>
+<tr>
+<td title='appFunctions.PurchaseQuoteAgents.purchaseQuote()'><b>purchaseQuote</b><br>Test class: appFunctions.PurchaseQuoteAgents</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[contains(text(),&apos;A - Agent, Test&apos;)]&quot;}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;APANGA-XEN&apos;, ip: &apos;172.16.224.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\apanga\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63352}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c66b1c80b8d40b85c2dd0bd81b3148a2
+*** Element info: {Using=xpath, value=//li[contains(text(),&apos;A - Agent, Test&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at appFunctions.PurchaseQuoteAgents.purchaseQuote(PurchaseQuoteAgents.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1063299540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063299540'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[contains(text(),&apos;A - Agent, Test&apos;)]&quot;}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;APANGA-XEN&apos;, ip: &apos;172.16.224.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\apanga\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63352}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c66b1c80b8d40b85c2dd0bd81b3148a2
+*** Element info: {Using=xpath, value=//li[contains(text(),&apos;A - Agent, Test&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at appFunctions.PurchaseQuoteAgents.purchaseQuote(PurchaseQuoteAgents.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>appFunctions.PurchaseQuoteAgents@4d178d55</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='appFunctions.AdminHomePage.adminBuyABond()'><b>adminBuyABond</b><br>Test class: appFunctions.AdminHomePage</td>
+<td></td>
+<td>18</td>
+<td>appFunctions.AdminHomePage@9a6fbc0</td></tr>
+<tr>
+<td title='appFunctions.AdminLogin.adminLogin()'><b>adminLogin</b><br>Test class: appFunctions.AdminLogin</td>
+<td></td>
+<td>14</td>
+<td>appFunctions.AdminLogin@4d96250</td></tr>
+<tr>
+<td title='appFunctions.AdminBond.approveBond()'><b>approveBond</b><br>Test class: appFunctions.AdminBond</td>
+<td></td>
+<td>52</td>
+<td>appFunctions.AdminBond@1706a5c9</td></tr>
+<tr>
+<td title='appFunctions.PurchaseQuoteAgents.billingTypeSlt()'><b>billingTypeSlt</b><br>Test class: appFunctions.PurchaseQuoteAgents</td>
+<td></td>
+<td>483</td>
+<td>appFunctions.PurchaseQuoteAgents@4d178d55</td></tr>
+<tr>
+<td title='appFunctions.Cancellation.cancellation()'><b>cancellation</b><br>Test class: appFunctions.Cancellation</td>
+<td></td>
+<td>90</td>
+<td>appFunctions.Cancellation@2875b016</td></tr>
+<tr>
+<td title='appFunctions.ChangeAccount.changeAccount()'><b>changeAccount</b><br>Test class: appFunctions.ChangeAccount</td>
+<td></td>
+<td>75</td>
+<td>appFunctions.ChangeAccount@1a480135</td></tr>
+<tr>
+<td title='appFunctions.WhoIsTheBondApplicant.chooseApplicant()'><b>chooseApplicant</b><br>Test class: appFunctions.WhoIsTheBondApplicant</td>
+<td></td>
+<td>9</td>
+<td>appFunctions.WhoIsTheBondApplicant@35178483</td></tr>
+<tr>
+<td title='appFunctions.FindBondType.clickABond()'><b>clickABond</b><br>Test class: appFunctions.FindBondType</td>
+<td></td>
+<td>12</td>
+<td>appFunctions.FindBondType@c1fa7d4</td></tr>
+<tr>
+<td title='appFunctions.ApplicationStatus.clickGoToBond()'><b>clickGoToBond</b><br>Test class: appFunctions.ApplicationStatus</td>
+<td></td>
+<td>0</td>
+<td>appFunctions.ApplicationStatus@1de6932a</td></tr>
+<tr>
+<td title='appFunctions.WhoIsTheBondApplicant.clickOnAddPerson()'><b>clickOnAddPerson</b><br>Test class: appFunctions.WhoIsTheBondApplicant</td>
+<td></td>
+<td>35</td>
+<td>appFunctions.WhoIsTheBondApplicant@35178483</td></tr>
+<tr>
+<td title='appFunctions.SubmitClaim.doClaim()'><b>doClaim</b><br>Test class: appFunctions.SubmitClaim</td>
+<td></td>
+<td>69</td>
+<td>appFunctions.SubmitClaim@38c2c309</td></tr>
+<tr>
+<td title='appFunctions.SubmitClaim.editClaim()'><b>editClaim</b><br>Test class: appFunctions.SubmitClaim</td>
+<td></td>
+<td>19</td>
+<td>appFunctions.SubmitClaim@38c2c309</td></tr>
+<tr>
+<td title='appFunctions.Bond.getAccountNumber()'><b>getAccountNumber</b><br>Test class: appFunctions.Bond</td>
+<td></td>
+<td>1</td>
+<td>appFunctions.Bond@14dc3f89</td></tr>
+<tr>
+<td title='appFunctions.Login.launchApplication()'><b>launchApplication</b><br>Test class: appFunctions.Login</td>
+<td></td>
+<td>10</td>
+<td>appFunctions.Login@138caeca</td></tr>
+<tr>
+<td title='appFunctions.NonRenew.nonRenew()'><b>nonRenew</b><br>Test class: appFunctions.NonRenew</td>
+<td></td>
+<td>54</td>
+<td>appFunctions.NonRenew@68c7ef83</td></tr>
+<tr>
+<td title='appFunctions.SubmitPBR.premiumBearingRider()'><b>premiumBearingRider</b><br>Test class: appFunctions.SubmitPBR</td>
+<td></td>
+<td>89</td>
+<td>appFunctions.SubmitPBR@681e144</td></tr>
+<tr>
+<td title='appFunctions.Questions.questions()'><b>questions</b><br>Test class: appFunctions.Questions</td>
+<td></td>
+<td>157</td>
+<td>appFunctions.Questions@bd1111a</td></tr>
+<tr>
+<td title='appFunctions.Reinstate.reinstate()'><b>reinstate</b><br>Test class: appFunctions.Reinstate</td>
+<td></td>
+<td>66</td>
+<td>appFunctions.Reinstate@72ee5d84</td></tr>
+<tr>
+<td title='appFunctions.NonRenew.reinstateNonRenew()'><b>reinstateNonRenew</b><br>Test class: appFunctions.NonRenew</td>
+<td></td>
+<td>25</td>
+<td>appFunctions.NonRenew@68c7ef83</td></tr>
+<tr>
+<td title='appFunctions.Requote.requote()'><b>requote</b><br>Test class: appFunctions.Requote</td>
+<td></td>
+<td>70</td>
+<td>appFunctions.Requote@64412d34</td></tr>
+<tr>
+<td title='appFunctions.InitialBondInformation.selectBondFamily()'><b>selectBondFamily</b><br>Test class: appFunctions.InitialBondInformation</td>
+<td></td>
+<td>32</td>
+<td>appFunctions.InitialBondInformation@7a93b263</td></tr>
+<tr>
+<td title='appFunctions.SubmitNPBR.submitNonPremiumBearingRider()'><b>submitNonPremiumBearingRider</b><br>Test class: appFunctions.SubmitNPBR</td>
+<td></td>
+<td>73</td>
+<td>appFunctions.SubmitNPBR@778db7c5</td></tr>
+<tr>
+<td title='appFunctions.SubmitRenewalApplication.submitRenewalApplication()'><b>submitRenewalApplication</b><br>Test class: appFunctions.SubmitRenewalApplication</td>
+<td></td>
+<td>82</td>
+<td>appFunctions.SubmitRenewalApplication@6145b81e</td></tr>
+<tr>
+<td title='appFunctions.SubmitRenewalNPBR.submitRenewalNPBR()'><b>submitRenewalNPBR</b><br>Test class: appFunctions.SubmitRenewalNPBR</td>
+<td></td>
+<td>87</td>
+<td>appFunctions.SubmitRenewalNPBR@64355120</td></tr>
+<tr>
+<td title='appFunctions.ApplicationSummary.validateApplicationSummary()'><b>validateApplicationSummary</b><br>Test class: appFunctions.ApplicationSummary</td>
+<td></td>
+<td>5</td>
+<td>appFunctions.ApplicationSummary@7a8136b3</td></tr>
+</table><p>
+</body>
+</html>
