@@ -6,7 +6,8 @@
 	<artifactId>Hudson</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
+	<!-- Chaged for main Branch -->
+		
 	<build>
 		<!-- Source directory configuration -->
 		<sourceDirectory>src/main/java</sourceDirectory>
